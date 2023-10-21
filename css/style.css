@@ -24,6 +24,13 @@
 
 body {
     background: #FF5678;
+}
+
+.main {
+    max-wight: 300px;
+}
+
+h1 {
     color: #FFF;
     text-align: center;
     font-family: Comfortaa;
@@ -32,4 +39,35 @@ body {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2.6px;
+}
+
+.menu {
+    grid-template: "." 130px
+                   "." 130px
+                   / 186px 186px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 44px;
+    margin-right: 44px;
+}
+
+table {
+    width: 130px; /* Ширина таблицы */
+    border-spacing: 40px; /* Расстояние между ячейками */
+    margin-top: 30px;
+    margin-left: 44px;
+    margin-right: 44px;
+}
+td, th {
+    padding: 0px; /* Поля вокруг текста */
+   }
+
+h2 {
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.675px;
 }
