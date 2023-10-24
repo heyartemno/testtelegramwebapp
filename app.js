@@ -6,6 +6,8 @@ tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
 let item = "";
+//const counters = document.querySelectorAll('[data-counter]')
+
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -80,6 +82,6 @@ btn6.addEventListener("click", function(){
     }
 });
 
-Telegram.WebApp.onEvent("mainButtonClicked". function(){
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
     tg.sendData(item);
 });

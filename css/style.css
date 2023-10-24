@@ -64,7 +64,7 @@ h1 {
   text-align: center;
 }
 
-.items {
+.card-body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: stretch;
@@ -109,6 +109,44 @@ p {
 }
 
 .buy:hover {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.counter_wrapper {
+    /*display: none;*/
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    column-gap: 4px;
+    user-select: none;
+}
+
+.items_control {
+    flex: 0 0 30px;
+    border: none;
+    border-radius: 50px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.items_current {
+    display: flex;
+    flex: 0 0 40px;
+    background: none;
+    /*background: #FFFFFF;*/
+    border: none;
+    border-radius: 30px;
+    justify-content: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 400;
+    margin: auto;
+}
+
+.items_control:hover {
     background: #000000;
     color: #FFFFFF;
 }
