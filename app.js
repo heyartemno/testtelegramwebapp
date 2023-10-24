@@ -2,8 +2,8 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#2cab37";
+tg.MainButton.textColor = '#FFFFFF';
+tg.MainButton.color = '#2cab37';
 
 let item = "";
 
@@ -80,6 +80,6 @@ btn6.addEventListener("click", function(){
     }
 });
 
-Telegram.Webapp.onEvent("mainButtonClicked". function(){
+Telegram.WebApp.onEvent("mainButtonClicked". function(){
     tg.sendData(item);
 });
