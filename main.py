@@ -21,7 +21,7 @@ def start(message):
         markup.add(types.InlineKeyboardButton('Заказать', web_app=WebAppInfo(url='https://heyartemno.github.io/testtelegramwebapp/')))
         bot.send_message(message.chat.id, mess, parse_mode='html', reply_markup=markup)
 
-@bot.message_handler(content_types='web_app_data')
+@bot.message_handler(content_types=['web_app_data'])
 def buy_process(web_app_message):
     bot.send_invoice(web_app_message.chat.id,
                            title='Laptop',
