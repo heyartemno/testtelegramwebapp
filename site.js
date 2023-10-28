@@ -1,18 +1,5 @@
-window.addEventListener('click', function (event) {
 
-let btn1 = document.getElementById("btn1");
-let btn2 = document.getElementById("btn2");
-let btn3 = document.getElementById("btn3");
-let btn4 = document.getElementById("btn4");
-let btn5 = document.getElementById("btn5");
-let btn6 = document.getElementById("btn6");
-
-/*btn1.addEventListener("click", function(){
-    if (event.target.closest('.counter_wrapper').isVisible) {
-         btn1.hide();
-    }
-});*/
-
+addEventListener('click', function (event) {
 
     let counter;
     // Проверка клика строго по кнопкам Плис или Минус
