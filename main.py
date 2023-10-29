@@ -5,10 +5,11 @@ from telebot.types import WebAppInfo, ShippingOption
 bot = telebot.TeleBot("5175169529:AAFWRSHZGblFf5GNWdN3rMRDQF3iqRS11EE")
 PAYMENTS_TOKEN = '401643678:TEST:0363ce47-d7c7-47d4-8491-170838062f73'
 keyboard = WebAppInfo(url='https://heyartemno.github.io/testtelegramwebapp/')
-markup = types.ReplyKeyboardMarkup()
 
 PRICE = {
-    '1': [types.LabeledPrice(label='Зефир', amount=100*100)],
+    '1_3': [types.LabeledPrice(label='Зефир (3шт)', amount=100 * 3 * 100)],
+    '1_6': [types.LabeledPrice(label='Зефир (6шт)', amount=100 * 6 * 100)],
+    '1_9': [types.LabeledPrice(label='Зефир (9шт)', amount=100*9*100)],
     '2': [types.LabeledPrice(label='Маршмеллоу', amount=120*100)],
     '3': [types.LabeledPrice(label='Шоколадное печенье', amount=120*100)],
     '4': [types.LabeledPrice(label='Фисташковое печенье', amount=120*100)],
@@ -32,6 +33,7 @@ VOLGOGRAD_SHIPPING_OPTION.add_price(types.LabeledPrice('Доставка', 200*1
 @bot.message_handler(commands=['start'])
 def start(message):
         mess = f"Привет, <b>{message.from_user.first_name}</b>👋 \n\nСамые вкусные сладости можно заказать по кнопке ниже😋👇"
+        markup = types.ReplyKeyboardMarkup()
         markup.add(types.KeyboardButton('Заказать', web_app=keyboard))
         bot.send_message(message.chat.id, mess, parse_mode='html', reply_markup=markup)
 
