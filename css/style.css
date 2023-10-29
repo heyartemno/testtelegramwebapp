@@ -114,8 +114,8 @@ p {
 }
 
 .counter_wrapper {
-    /*display: none;*/
-    display: flex;
+    display: none;
+    /*display: flex;*/
     flex-direction: row;
     height: 20px;
     column-gap: 4px;
@@ -127,7 +127,7 @@ p {
     border: none;
     border-radius: 50px;
     background: #FFFFFF;
-    display: flex;
+    text-align: center;
     justify-content: center;
 }
 
@@ -138,12 +138,13 @@ p {
     /*background: #FFFFFF;*/
     border: none;
     border-radius: 30px;
-    justify-content: center;
     color: #000;
     font-family: Comfortaa;
     font-style: normal;
     font-weight: 400;
     margin: auto;
+    text-align: center;
+    justify-content: center;
 }
 
 .items_control:hover {
