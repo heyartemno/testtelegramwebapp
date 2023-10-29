@@ -21,11 +21,6 @@ PICKUP_SHIPPING_OPTION = ShippingOption(
     title='Самовывоз'
 ).add_price(types.LabeledPrice('Самовывоз', 0))
 
-PICKUP_SHIPPING_OPTION = ShippingOption(
-    id='pickup',
-    title='Самовывоз'
-).add_price(types.LabeledPrice('Самовывоз', 0))
-
 RUSSIA_SHIPPING_OPTION = types.ShippingOption(
     id='russia',
     title='По России'
