@@ -40,8 +40,6 @@ let btn6 = document.getElementById("btn6");
 //    })
 //};
 
-
-
 btn1_3.addEventListener("click", function(){
         tg.MainButton.setText("Товар добавлен в корзину!")
         item = "1_3";
@@ -59,7 +57,6 @@ btn1_9.addEventListener("click", function(){
         item = "1_9";
         tg.MainButton.show();
 });
-
 
 btn2.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
